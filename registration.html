@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jqueryscript.js"></script>
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <div class="form1">
+        <form id="form2">
+
+            <span class="error"></span><br>
+
+            <label for="name">Name:</label><br>
+            <input type="text" name="Name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" name="Email"><br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female<br><br>
+
+            <label for="hobby">Hobby:</label>
+            <input type="checkbox" value="Dancing"> Dancing
+            <input type="checkbox" value="Singing"> Singing
+            <input type="checkbox" value="Coding"> Coding<br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" name="Age"><br><br>
+
+            <label for="state">State:</label><br>
+            <select name="State" id="State">
+                <option value="">Select state</option>
+            </select><br><br>
+
+            <label for="city">City:</label><br>
+            <select name="City" id="City">
+                <option value="">Select city</option>
+            </select><br><br>
+
+            <input type="submit" class="but" value="Submit">
+            <input type="reset" class="but" value="Reset">
+        </form>
+    </div>
+    <br><br>
+    <label for="search" id="search">Search</label>
+    <input type="text" id="myInput" placeholder="Search for names.."><br>
+
+    <br>
+    <label for="sort" id="sortname">Sort by Name:</label>
+    <select id="sort">
+        <option value="">Select</option>
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+    </select>
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Hobbies</th>
+                <th>Age</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
